@@ -12,7 +12,7 @@ The repository does not host the full dataset directly due to file size constrai
 
 The complete preprocessed photoplethysmography (PPG) dataset is publicly available on Zenodo:
 
-**DOI:** https://doi.org/XXXXXXXX
+**DOI:** https://doi.org/10.5281/zenodo.18109876
 
 Please refer to the Zenodo record to download the full dataset.
 
