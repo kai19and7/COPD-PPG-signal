@@ -1,78 +1,52 @@
-# COPD Prediction Using PPG Signals Dataset
+# PPG Dataset for COPD Detection Using Deep Learning
 
-This repository provides the datasets supporting the study:
+This repository provides documentation and reference material for the dataset supporting the manuscript:
 
-“Ultra-Short PPG-Based Screening of COPD Using Ensemble Machine Learning Models.”
+**A Hybrid Deep Learning Approach for Chronic Obstructive Pulmonary Disease Diagnosis Using Photoplethysmography Signal**
 
-The dataset was collected as part of a clinical screening study aimed at evaluating the feasibility of photoplethysmography (PPG) signals for non-invasive Chronic Obstructive Pulmonary Disease (COPD) detection using machine learning techniques.
+The repository does not host the full dataset directly due to file size constraints. Instead, it provides dataset access information, structural descriptions, and citation details to support transparency and reproducibility.
 
-All data are derived from clinically screened participants and organized to facilitate reproducible experimentation with varying signal durations.
+---
 
-Dataset Description
+## Dataset Access
 
-The dataset consists of PPG signal segments extracted at multiple time resolutions to investigate the effect of signal length on COPD classification performance.
+The complete preprocessed photoplethysmography (PPG) dataset is publicly available on Zenodo:
 
-The total number of participants in this study is six (6), reflecting a controlled pilot-scale clinical screening setting. Despite the limited cohort size, the dataset is structured to enable methodological evaluation, feature analysis, and model benchmarking.
-Dataset Contents
+**DOI:** https://doi.org/XXXXXXXX
 
-The repository is organized into the following directories, each corresponding to a different PPG segment duration:
+Please refer to the Zenodo record to download the full dataset.
 
-2s_db/
-PPG signal segments of 2-second duration
+---
 
-16s_db/
-PPG signal segments of 16-second duration
+## Dataset Description
 
-32s_db/
-PPG signal segments of 32-second duration
+The dataset consists of anonymized photoplethysmography (PPG) signal recordings obtained from clinically screened participants for COPD assessment. The signals were segmented into fixed-length temporal windows and preprocessed using min–max normalization and linear interpolation.
 
-64s_db/
-PPG signal segments of 64-second duration
+The dataset includes PPG signal segments with the following window lengths:
 
-128s_db/
-PPG signal segments of 128-second duration
+- 2 seconds  
+- 16 seconds  
+- 64 seconds  
+- 128 seconds  
+- 256 seconds  
 
-256s_db/
-PPG signal segments of 256-second duration
+These segmented signals were used to evaluate deep learning architectures for COPD detection.
 
-Each directory contains preprocessed PPG data suitable for direct use in machine learning pipelines, including feature extraction, classification, and performance comparison across temporal resolutions.
+All data are provided exclusively as numerical signal arrays. No personally identifiable information, demographic attributes, or sensitive clinical data are included.
 
-Key Features
+---
 
-Multi-Resolution Analysis
-Enables systematic evaluation of COPD detection performance across ultra-short to longer PPG signal windows.
+## Intended Use
 
-Clinically Screened Data
-All recordings originate from a controlled clinical screening process, ensuring medical relevance.
+This dataset is intended for academic and methodological research in:
 
-Privacy-Preserving Format
-Data are provided as signal segments only; no personally identifiable information is included.
+- COPD detection and screening studies  
+- Deep learning applied to physiological signals  
+- Time-series analysis of photoplethysmography data  
 
-Machine Learning Ready
-Structured to support classical and ensemble-based ML models without additional preprocessing requirements.
+The dataset is provided for research and educational purposes only and is **not intended for direct clinical diagnosis or medical decision-making**.
 
-Intended Use
+---
 
-This dataset is intended for:
+## Repository Contents
 
-Research on non-invasive respiratory disease screening
-
-Studies exploring PPG-based physiological signal analysis
-
-Benchmarking machine learning models for small-sample clinical datasets
-
-Feasibility and pilot studies for wearable health monitoring systems
-
-The dataset is not intended for direct clinical diagnosis or standalone medical decision-making.
-
-Limitations
-
-The dataset includes a limited number of participants (n = 6) and should be considered exploratory.
-
-Results derived from this data should be interpreted as methodological validation, not population-level inference.
-
-License
-
-This dataset is provided for research and educational purposes only.
-
-Any use of this data must appropriately cite the associated publication.
